@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Simples</title>
+   
+</head>
+<body>
+    <!-- Conversor de Moeda -->
+    <div class="container">
+        <h2>Conversor de Moeda</h2>
+        <p>Converta de ($BRL) para Dólar ($USD)</p>
+        <input type="number" id="valorReal" placeholder="Valor em R$">
+        <br>
+        <button onclick="converterMoeda()">Converter</button>
+
+        <br><br>
+        <p>Valor em Dólar:</p>
+        <input type="text" id="resultadoConversao" readonly>
+        
+        <h2>Calculadora Simples</h2>
+        
+        <input type="number" id="num1" placeholder="Número 1">
+        <input type="number" id="num2" placeholder="Número 2">
+        
+        <br>
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">×</button>
+        <button onclick="calcular('/')">÷</button>
+
+        <br><br>
+        <label>Resultado:</label>
+        <input type="text" id="resultado" readonly>
+    </div>
+    
+
+        <script src="script.js"> </script>
+</body>
+</html>
